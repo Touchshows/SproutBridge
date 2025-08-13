@@ -9,7 +9,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="container">
           <header className="header">
             <h1><Link href="/">SproutBridge · 课程库</Link></h1>
-            <nav>
+            <nav style={{ display: 'flex', gap: '15px' }}>
+              <Link className="btn" href="/changelog">更新日志</Link>
               <Link className="btn" href="/help">观看帮助</Link>
             </nav>
           </header>

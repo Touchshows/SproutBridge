@@ -1,0 +1,96 @@
+{
+  "changelog": [
+    {
+      "version": "v2.0.0",
+      "date": "2025-08-13",
+      "title": "重大更新：课程分类重构",
+      "type": "major",
+      "changes": [
+        {
+          "type": "新增",
+          "description": "添加数学启蒙分类，包含一至六年级完整课程体系"
+        },
+        {
+          "type": "新增",
+          "description": "新增英语发音模块：自然拼读基础、进阶、国际音标、口语对话"
+        },
+        {
+          "type": "新增",
+          "description": "新增汉语发音模块：拼音基础、进阶、普通话发音、古诗词朗诵、演讲训练"
+        },
+        {
+          "type": "优化",
+          "description": "重构课程数据结构，支持分类和子分类展示"
+        },
+        {
+          "type": "优化",
+          "description": "改进首页布局，采用分类卡片式设计"
+        },
+        {
+          "type": "新增",
+          "description": "添加更新日志功能，记录版本变更历史"
+        }
+      ]
+    },
+    {
+      "version": "v1.2.0",
+      "date": "2025-08-01",
+      "title": "界面优化与功能完善",
+      "type": "minor",
+      "changes": [
+        {
+          "type": "优化",
+          "description": "优化课程卡片样式，提升视觉效果"
+        },
+        {
+          "type": "修复",
+          "description": "修复移动端响应式布局问题"
+        },
+        {
+          "type": "新增",
+          "description": "添加课程封面图片支持"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.0",
+      "date": "2025-07-15",
+      "title": "基础功能完善",
+      "type": "minor",
+      "changes": [
+        {
+          "type": "新增",
+          "description": "添加帮助页面，提供观看指导"
+        },
+        {
+          "type": "优化",
+          "description": "改进课程详情页面布局"
+        },
+        {
+          "type": "修复",
+          "description": "修复百度网盘链接跳转问题"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2025-07-01",
+      "title": "SproutBridge 正式发布",
+      "type": "major",
+      "changes": [
+        {
+          "type": "新增",
+          "description": "项目初始发布，提供基础课程展示功能"
+        },
+        {
+          "type": "新增",
+          "description": "支持课程分类和详情查看"
+        },
+        {
+          "type": "新增",
+          "description": "集成百度网盘课程资源"
+        }
+      ]
+    }
+  ]
+}
