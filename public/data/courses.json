@@ -1,25 +1,97 @@
 [
   {
-    "category_id": "chinese-pronunciation",
-    "category_title": "汉语发音",
+    "category_id": "math-enlightenment",
+    "category_title": "数学启蒙",
     "courses": [
       {
-        "id": "zh-py-01",
-        "title": "声母 a o e",
-        "subject": "汉语",
-        "level": "入门",
-        "cover_url": "https://via.placeholder.com/640x360?text=Pinyin+a+o+e",
-        "description": "学习最基础的三个单韵母 a, o, e 的正确发音口型和技巧。",
-        "outline": [
-          "认识 a o e",
-          "口型示范",
-          "跟读练习"
-        ],
-        "total_minutes": 8,
-        "pan_share_url": "https://pan.baidu.com/s/your-link-1",
-        "pan_extract_code": "c123",
+        "id": "math-grade-1",
+        "title": "一年级数学",
+        "subject": "数学",
+        "level": "一年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "一年级数学基础课程，包含准备课、位置、数字认识等内容",
+        "outline": ["准备课", "位置", "1~5的认识和加减法", "认识图形"],
+        "total_minutes": 300,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade1-all",
+        "pan_extract_code": "mg1a",
         "attachments": [],
-        "tags": ["拼音", "入门"]
+        "tags": ["一年级", "基础"],
+        "is_category": true
+      },
+      {
+        "id": "math-grade-2",
+        "title": "二年级数学",
+        "subject": "数学",
+        "level": "二年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "二年级数学课程，包含长度单位、加减法、表内乘法等内容",
+        "outline": ["长度单位", "100以内的加法和减法", "表内乘法"],
+        "total_minutes": 410,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade2-all",
+        "pan_extract_code": "mg2a",
+        "attachments": [],
+        "tags": ["二年级", "进阶"],
+        "is_category": true
+      },
+      {
+        "id": "math-grade-3",
+        "title": "三年级数学",
+        "subject": "数学",
+        "level": "三年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "三年级数学课程，包含时间、万以内加减法、测量等内容",
+        "outline": ["时、分、秒", "万以内的加法和减法", "测量"],
+        "total_minutes": 350,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade3-all",
+        "pan_extract_code": "mg3a",
+        "attachments": [],
+        "tags": ["三年级", "提高"],
+        "is_category": true
+      },
+      {
+        "id": "math-grade-4",
+        "title": "四年级数学",
+        "subject": "数学",
+        "level": "四年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "四年级数学课程，包含大数认识、面积单位、角的度量等内容",
+        "outline": ["大数的认识", "公顷和平方千米", "角的度量"],
+        "total_minutes": 300,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade4-all",
+        "pan_extract_code": "mg4a",
+        "attachments": [],
+        "tags": ["四年级", "深化"],
+        "is_category": true
+      },
+      {
+        "id": "math-grade-5",
+        "title": "五年级数学",
+        "subject": "数学",
+        "level": "五年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "五年级数学课程，包含小数乘除法、位置等内容",
+        "outline": ["小数乘法", "位置", "小数除法"],
+        "total_minutes": 350,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade5-all",
+        "pan_extract_code": "mg5a",
+        "attachments": [],
+        "tags": ["五年级", "拓展"],
+        "is_category": true
+      },
+      {
+        "id": "math-grade-6",
+        "title": "六年级数学",
+        "subject": "数学",
+        "level": "六年级",
+        "cover_url": "/images/covers/math-cover.png",
+        "description": "六年级数学课程，包含分数运算、比例、圆等内容",
+        "outline": ["分数乘法", "位置与方向", "分数除法", "比", "圆"],
+        "total_minutes": 600,
+        "pan_share_url": "https://pan.baidu.com/s/1math-grade6-all",
+        "pan_extract_code": "mg6a",
+        "attachments": [],
+        "tags": ["六年级", "综合"],
+        "is_category": true
       }
     ]
   },
@@ -28,56 +100,145 @@
     "category_title": "英语发音",
     "courses": [
       {
-        "id": "en-phonics-01",
-        "title": "元音 Vowels (a, e, i, o, u)",
+        "id": "english-phonics-basic",
+        "title": "自然拼读基础",
         "subject": "英语",
-        "level": "低年级",
-        "cover_url": "https://via.placeholder.com/640x360?text=English+Vowels",
-        "description": "用口型示范与儿歌节奏，建立元音意识。",
-        "outline": [
-          "a/e/i/o/u 口型",
-          "儿歌节奏",
-          "跟读训练"
-        ],
-        "total_minutes": 12,
-        "pan_share_url": "https://pan.baidu.com/s/1fnvuEoaoJaUDFHyL4-IQew?pwd=ab9p",
-        "pan_extract_code": "ab9p",
-        "attachments": [
-          {
-            "name": "练习单-元音A4.pdf",
-            "url": "https://pan.baidu.com/s/your-link-2"
-          }
-        ],
-        "tags": ["发音", "跟读", "低年级"]
+        "level": "启蒙",
+        "cover_url": "/images/covers/english-cover.png",
+        "description": "学习26个字母的发音和基础拼读规则",
+        "outline": ["字母发音", "单音节词", "拼读规则", "发音练习"],
+        "total_minutes": 180,
+        "pan_share_url": "https://pan.baidu.com/s/1english-phonics-basic",
+        "pan_extract_code": "epb1",
+        "attachments": [],
+        "tags": ["英语", "发音", "基础"],
+        "is_category": true
+      },
+      {
+        "id": "english-phonics-advanced",
+        "title": "自然拼读进阶",
+        "subject": "英语",
+        "level": "进阶",
+        "cover_url": "/images/covers/english-cover.png",
+        "description": "学习复杂拼读规则和多音节词汇",
+        "outline": ["复合音", "多音节词", "重音规则", "语调练习"],
+        "total_minutes": 240,
+        "pan_share_url": "https://pan.baidu.com/s/1english-phonics-advanced",
+        "pan_extract_code": "epa1",
+        "attachments": [],
+        "tags": ["英语", "发音", "进阶"],
+        "is_category": true
+      },
+      {
+        "id": "english-ipa",
+        "title": "国际音标",
+        "subject": "英语",
+        "level": "专业",
+        "cover_url": "/images/covers/english-cover.png",
+        "description": "系统学习48个国际音标的发音",
+        "outline": ["元音音标", "辅音音标", "音标组合", "标准发音"],
+        "total_minutes": 300,
+        "pan_share_url": "https://pan.baidu.com/s/1english-ipa",
+        "pan_extract_code": "eip1",
+        "attachments": [],
+        "tags": ["英语", "音标", "专业"],
+        "is_category": true
+      },
+      {
+        "id": "english-conversation",
+        "title": "口语对话",
+        "subject": "英语",
+        "level": "实用",
+        "cover_url": "/images/covers/english-cover.png",
+        "description": "日常英语口语对话练习",
+        "outline": ["日常问候", "购物对话", "旅游英语", "商务对话"],
+        "total_minutes": 360,
+        "pan_share_url": "https://pan.baidu.com/s/1english-conversation",
+        "pan_extract_code": "eco1",
+        "attachments": [],
+        "tags": ["英语", "口语", "实用"],
+        "is_category": true
       }
     ]
   },
   {
-    "category_id": "math-concepts",
-    "category_title": "数学概念",
+    "category_id": "chinese-pronunciation",
+    "category_title": "汉语发音",
     "courses": [
       {
-        "id": "math-logic-01",
-        "title": "生活中的长度单位",
-        "subject": "数学",
-        "level": "低年级",
-        "cover_url": "https://via.placeholder.com/640x360?text=Math+Units",
-        "description": "用身边物品认识毫米/厘米/米。",
-        "outline": [
-          "比较与估算",
-          "测量小游戏",
-          "实践记录表"
-        ],
-        "total_minutes": 9,
-        "pan_share_url": "https://pan.baidu.com/s/your-link-3",
-        "pan_extract_code": "m456",
-        "attachments": [
-          {
-            "name": "测量记录单.pdf",
-            "url": "https://pan.baidu.com/s/your-link-4"
-          }
-        ],
-        "tags": ["度量", "实践"]
+        "id": "pinyin-basic",
+        "title": "拼音基础",
+        "subject": "语文",
+        "level": "启蒙",
+        "cover_url": "/images/covers/chinese-cover.png",
+        "description": "学习汉语拼音的声母、韵母和声调",
+        "outline": ["声母学习", "韵母学习", "声调练习", "拼读训练"],
+        "total_minutes": 200,
+        "pan_share_url": "https://pan.baidu.com/s/1pinyin-basic",
+        "pan_extract_code": "pyb1",
+        "attachments": [],
+        "tags": ["语文", "拼音", "基础"],
+        "is_category": true
+      },
+      {
+        "id": "pinyin-advanced",
+        "title": "拼音进阶",
+        "subject": "语文",
+        "level": "进阶",
+        "cover_url": "/images/covers/chinese-cover.png",
+        "description": "复杂拼音组合和特殊读音规则",
+        "outline": ["复韵母", "鼻韵母", "整体认读音节", "变调规则"],
+        "total_minutes": 180,
+        "pan_share_url": "https://pan.baidu.com/s/1pinyin-advanced",
+        "pan_extract_code": "pya1",
+        "attachments": [],
+        "tags": ["语文", "拼音", "进阶"],
+        "is_category": true
+      },
+      {
+        "id": "mandarin-pronunciation",
+        "title": "普通话发音",
+        "subject": "语文",
+        "level": "标准",
+        "cover_url": "/images/covers/chinese-cover.png",
+        "description": "标准普通话发音训练和纠音",
+        "outline": ["发音标准", "语音纠正", "朗读技巧", "语调练习"],
+        "total_minutes": 240,
+        "pan_share_url": "https://pan.baidu.com/s/1mandarin-pronunciation",
+        "pan_extract_code": "mp01",
+        "attachments": [],
+        "tags": ["语文", "普通话", "标准"],
+        "is_category": true
+      },
+      {
+        "id": "ancient-poetry-recitation",
+        "title": "古诗词朗诵",
+        "subject": "语文",
+        "level": "文化",
+        "cover_url": "/images/covers/chinese-cover.png",
+        "description": "古诗词的正确发音和朗诵技巧",
+        "outline": ["古音知识", "诗词韵律", "朗诵技巧", "情感表达"],
+        "total_minutes": 300,
+        "pan_share_url": "https://pan.baidu.com/s/1ancient-poetry",
+        "pan_extract_code": "apr1",
+        "attachments": [],
+        "tags": ["语文", "古诗词", "文化"],
+        "is_category": true
+      },
+      {
+        "id": "speech-training",
+        "title": "演讲训练",
+        "subject": "语文",
+        "level": "高级",
+        "cover_url": "/images/covers/chinese-cover.png",
+        "description": "提升口语表达能力和演讲技巧",
+        "outline": ["发声技巧", "语速控制", "情感表达", "演讲技巧"],
+        "total_minutes": 280,
+        "pan_share_url": "https://pan.baidu.com/s/1speech-training",
+        "pan_extract_code": "st01",
+        "attachments": [],
+        "tags": ["语文", "演讲", "高级"],
+        "is_category": true
       }
     ]
   }

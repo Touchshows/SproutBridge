@@ -14,6 +14,7 @@ export type Course = {
     url: string;
   }[];
   tags: string[];
+  is_category?: boolean; // 新增：标识是否为分类入口
 };
 
 export type CourseCategory = {

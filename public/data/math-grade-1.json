@@ -1,0 +1,44 @@
+[
+  {
+    "id": "math-g1-01",
+    "title": "准备课",
+    "subject": "数学",
+    "level": "一年级",
+    "cover_url": "/images/covers/math-cover.png",
+    "description": "数学学习的准备课程，培养数学兴趣",
+    "outline": ["数数", "比较", "分类", "认识图形"],
+    "total_minutes": 45,
+    "pan_share_url": "https://pan.baidu.com/s/1grade1-zhunbei",
+    "pan_extract_code": "g1z1",
+    "attachments": [],
+    "tags": ["一年级", "基础"]
+  },
+  {
+    "id": "math-g1-02",
+    "title": "位置",
+    "subject": "数学",
+    "level": "一年级",
+    "cover_url": "/images/covers/math-cover.png",
+    "description": "学习上下、前后、左右等位置关系",
+    "outline": ["上下", "前后", "左右", "位置游戏"],
+    "total_minutes": 40,
+    "pan_share_url": "https://pan.baidu.com/s/1grade1-weizhi",
+    "pan_extract_code": "g1w1",
+    "attachments": [],
+    "tags": ["一年级", "位置"]
+  },
+  {
+    "id": "math-g1-03",
+    "title": "1~5的认识和加减法",
+    "subject": "数学",
+    "level": "一年级",
+    "cover_url": "/images/covers/math-cover.png",
+    "description": "认识数字1-5，学习基本加减法",
+    "outline": ["数字认识", "数的组成", "加法", "减法"],
+    "total_minutes": 120,
+    "pan_share_url": "https://pan.baidu.com/s/1grade1-1to5",
+    "pan_extract_code": "g115",
+    "attachments": [],
+    "tags": ["一年级", "加减法"]
+  }
+]
