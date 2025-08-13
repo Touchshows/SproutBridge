@@ -1,20 +1,48 @@
 import coursesData from '@/public/data/courses.json';
-import type { Course } from '@/types';
+import type { Course, CourseCategory } from '@/types';
 
-export function getAllCourses(): Course[] {
-  return coursesData as unknown as Course[];
+/**
+ * 获取所有课程分类及每个分类下的课程
+ */
+export function getAllCourseCategories(): CourseCategory[] {
+  return coursesData as unknown as CourseCategory[];
 }
 
+/**
+ * 获取所有课程，并将它们从分类中提取出来，平铺成一个列表
+ */
+export function getAllCourses(): Course[] {
+  const allCourses = getAllCourseCategories().flatMap(category => category.courses);
+  return allCourses;
+}
+
+/**
+ * 根据课程ID查找特定课程
+ * @param id 课程的唯一ID
+ */
 export function getCourseById(id: string): Course | undefined {
   return getAllCourses().find(c => c.id === id);
 }
 
-export function listSubjects(): string[] {
-  const s = new Set(getAllCourses().map(c => c.subject));
-  return Array.from(s);
+/**
+ * 获取所有课程分类的标题
+ */
+export function listCourseCategoryTitles(): string[] {
+  return getAllCourseCategories().map(c => c.category_title);
 }
 
+/**
+ * 获取所有课程的学科列表（去重）
+ */
+export function listSubjects(): string[] {
+  const subjects = new Set(getAllCourses().map(c => c.subject));
+  return Array.from(subjects);
+}
+
+/**
+ * 获取所有课程的年级列表（去重）
+ */
 export function listLevels(): string[] {
-  const s = new Set(getAllCourses().map(c => c.level));
-  return Array.from(s);
+  const levels = new Set(getAllCourses().map(c => c.level));
+  return Array.from(levels);
 }

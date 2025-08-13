@@ -1,55 +1,84 @@
 [
   {
-    "id": "eng-pron-01",
-    "title": "英语发音·元音基础",
-    "subject": "英语",
-    "level": "低年级",
-    "cover_url": "https://via.placeholder.com/640x360?text=ENG+Vowel+01",
-    "description": "用口型示范与儿歌节奏，建立元音意识。",
-    "outline": [
-      "a/e/i/o/u 口型",
-      "儿歌节奏",
-      "跟读训练"
-    ],
-    "total_minutes": 12,
-    "pan_share_url": "https://pan.baidu.com/s/1fnvuEoaoJaUDFHyL4-IQew?pwd=ab9p",
-    "pan_extract_code": "ab9p",
-    "attachments": [
+    "category_id": "chinese-pronunciation",
+    "category_title": "汉语发音",
+    "courses": [
       {
-        "name": "练习单-元音A4.pdf",
-        "url": "https://pan.baidu.com/s/YYYY1"
+        "id": "zh-py-01",
+        "title": "声母 a o e",
+        "subject": "汉语",
+        "level": "入门",
+        "cover_url": "https://via.placeholder.com/640x360?text=Pinyin+a+o+e",
+        "description": "学习最基础的三个单韵母 a, o, e 的正确发音口型和技巧。",
+        "outline": [
+          "认识 a o e",
+          "口型示范",
+          "跟读练习"
+        ],
+        "total_minutes": 8,
+        "pan_share_url": "https://pan.baidu.com/s/your-link-1",
+        "pan_extract_code": "c123",
+        "attachments": [],
+        "tags": ["拼音", "入门"]
       }
-    ],
-    "tags": [
-      "发音",
-      "跟读",
-      "低年级"
     ]
   },
   {
-    "id": "math-fun-01",
-    "title": "趣味数学·生活中的长度单位",
-    "subject": "数学",
-    "level": "低年级",
-    "cover_url": "https://pan.baidu.com/s/XXXX4",
-    "description": "用身边物品认识毫米/厘米/米。",
-    "outline": [
-      "比较与估算",
-      "测量小游戏",
-      "实践记录表"
-    ],
-    "total_minutes": 9,
-    "pan_share_url": "https://pan.baidu.com/s/XXXX4",
-    "pan_extract_code": "2h8p",
-    "attachments": [
+    "category_id": "english-pronunciation",
+    "category_title": "英语发音",
+    "courses": [
       {
-        "name": "测量记录单.pdf",
-        "url": "https://pan.baidu.com/s/YYYY4"
+        "id": "en-phonics-01",
+        "title": "元音 Vowels (a, e, i, o, u)",
+        "subject": "英语",
+        "level": "低年级",
+        "cover_url": "https://via.placeholder.com/640x360?text=English+Vowels",
+        "description": "用口型示范与儿歌节奏，建立元音意识。",
+        "outline": [
+          "a/e/i/o/u 口型",
+          "儿歌节奏",
+          "跟读训练"
+        ],
+        "total_minutes": 12,
+        "pan_share_url": "https://pan.baidu.com/s/1fnvuEoaoJaUDFHyL4-IQew?pwd=ab9p",
+        "pan_extract_code": "ab9p",
+        "attachments": [
+          {
+            "name": "练习单-元音A4.pdf",
+            "url": "https://pan.baidu.com/s/your-link-2"
+          }
+        ],
+        "tags": ["发音", "跟读", "低年级"]
       }
-    ],
-    "tags": [
-      "度量",
-      "实践"
+    ]
+  },
+  {
+    "category_id": "math-concepts",
+    "category_title": "数学概念",
+    "courses": [
+      {
+        "id": "math-logic-01",
+        "title": "生活中的长度单位",
+        "subject": "数学",
+        "level": "低年级",
+        "cover_url": "https://via.placeholder.com/640x360?text=Math+Units",
+        "description": "用身边物品认识毫米/厘米/米。",
+        "outline": [
+          "比较与估算",
+          "测量小游戏",
+          "实践记录表"
+        ],
+        "total_minutes": 9,
+        "pan_share_url": "https://pan.baidu.com/s/your-link-3",
+        "pan_extract_code": "m456",
+        "attachments": [
+          {
+            "name": "测量记录单.pdf",
+            "url": "https://pan.baidu.com/s/your-link-4"
+          }
+        ],
+        "tags": ["度量", "实践"]
+      }
     ]
   }
 ]

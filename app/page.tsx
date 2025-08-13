@@ -1,54 +1,40 @@
-'use client';
 import Link from 'next/link';
-import { getAllCourses, listSubjects, listLevels } from '@/lib/data';
-import { useMemo, useState } from 'react';
-import type { Course } from '@/types';
+import { getAllCourseCategories } from '@/lib/data';
 
-const data: Course[] = getAllCourses();
-
-export default function HomePage() {
-  const [q, setQ] = useState('');
-  const [subject, setSubject] = useState<string>('全部');
-  const [level, setLevel] = useState<string>('全部');
-
-  const subjects = ['全部', ...listSubjects()];
-  const levels = ['全部', ...listLevels()];
-
-  const filtered = useMemo(() => {
-    return data.filter(c => {
-      const okQ = !q || (c.title + c.description + c.tags.join(',')).includes(q);
-      const okS = subject === '全部' || c.subject === subject;
-      const okL = level === '全部' || c.level === level;
-      return okQ && okS && okL;
-    });
-  }, [q, subject, level]);
+export default function Page() {
+  const courseCategories = getAllCourseCategories();
 
   return (
-    <main>
-      <div style={{display:'flex', gap:8, margin:'8px 0', flexWrap:'wrap'}}>
-        <input placeholder="搜索课程/标签…" value={q} onChange={e=>setQ(e.target.value)} />
-        <select value={subject} onChange={e=>setSubject(e.target.value)}>
-          {subjects.map(s => <option key={s} value={s}>{s}</option>)}
-        </select>
-        <select value={level} onChange={e=>setLevel(e.target.value)}>
-          {levels.map(s => <option key={s} value={s}>{s}</option>)}
-        </select>
-      </div>
-      <section className="grid">
-        {filtered.map(c => (
-          <Link href={`/course/${c.id}`} key={c.id} className="card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={c.cover_url} alt={c.title} />
-            <div className="card-body">
-              <h3 style={{margin:'4px 0'}}>{c.title}</h3>
-              <div className="badge">{c.subject}</div>
-              <div className="badge">{c.level}</div>
-              <div style={{color:'#6b7280', fontSize:12, marginTop:6}}>约 {c.total_minutes} 分钟</div>
+    <main className="p-8">
+      <h1 className="text-3xl font-bold mb-8">所有课程</h1>
+
+      <div className="space-y-12">
+        {courseCategories.map((category) => (
+          <section key={category.category_id}>
+            <h2 className="text-2xl font-semibold border-b-2 border-gray-200 pb-2 mb-6">
+              {category.category_title}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {category.courses.map((course) => (
+                <Link href={`/course/${course.id}`} key={course.id}>
+                  <div className="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src={course.cover_url}
+                      alt={`封面图片: ${course.title}`}
+                      className="w-full h-40 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="font-bold text-lg">{course.title}</h3>
+                      <p className="text-sm text-gray-600 mt-1">{course.level}</p>
+                      <p className="text-sm text-gray-500 mt-2 truncate">{course.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
-          </Link>
+          </section>
         ))}
-      </section>
-      {filtered.length===0 && <div className="alert">没有匹配的课程。</div>}
+      </div>
     </main>
   );
 }
