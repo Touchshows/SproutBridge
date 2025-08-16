@@ -1,19 +1,25 @@
 import coursesData from '@/public/data/courses.json';
-import type { Course, CourseCategory } from '@/types';
+import type { Course, CourseCategory, SuperCategory } from '@/types';
+
+/**
+ * 获取所有顶级课程分类及以下所有数据
+ */
+export function getAllSuperCategories(): SuperCategory[] {
+  return coursesData as unknown as SuperCategory[];
+}
 
 /**
  * 获取所有课程分类及每个分类下的课程
  */
 export function getAllCourseCategories(): CourseCategory[] {
-  return coursesData as unknown as CourseCategory[];
+  return getAllSuperCategories().flatMap(superCat => superCat.categories);
 }
 
 /**
  * 获取所有课程，并将它们从分类中提取出来，平铺成一个列表
  */
 export function getAllCourses(): Course[] {
-  const allCourses = getAllCourseCategories().flatMap(category => category.courses);
-  return allCourses;
+  return getAllCourseCategories().flatMap(category => category.courses);
 }
 
 /**

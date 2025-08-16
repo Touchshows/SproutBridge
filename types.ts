@@ -22,3 +22,9 @@ export type CourseCategory = {
   category_title: string;
   courses: Course[];
 };
+
+export type SuperCategory = {
+  super_category_id: string;
+  super_category_title: string;
+  categories: CourseCategory[];
+};

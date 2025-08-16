@@ -17,7 +17,9 @@ export default function CourseDetailPage() {
           '，即将打开百度网盘链接。'
       );
     }
-    window.open(course.pan_share_url, '_blank', 'noreferrer');
+    if (course.pan_share_url) {
+      window.open(course.pan_share_url, '_blank', 'noreferrer');
+    }
   };
 
   const copyCode = () => {
@@ -42,19 +44,25 @@ export default function CourseDetailPage() {
         <span style={{color:'#6b7280'}}>约 {course.total_minutes} 分钟</span>
       </div>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={course.cover_url} alt={course.title} style={{width:'100%',maxHeight:360,objectFit:'cover',borderRadius:10}} />
+      {course.cover_url && <img src={course.cover_url} alt={course.title} style={{width:'100%',maxHeight:360,objectFit:'cover',borderRadius:10}} />}
       <p style={{marginTop:8}}>{course.description}</p>
       <h4>本节要点</h4>
-      <ul>
-        {course.outline.map((o, i) => (
-          <li key={i}>{o}</li>
-        ))}
-      </ul>
+      {course.outline && course.outline.length > 0 ? (
+        <ul>
+          {course.outline.map((o, i) => (
+            <li key={i}>{o}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>暂无本节要点信息。</p>
+      )}
 
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 8 }}>
-        <button className="btn primary" onClick={openPan}>
-          去百度网盘观看
-        </button>
+        {course.pan_share_url && (
+          <button className="btn primary" onClick={openPan}>
+            去百度网盘观看
+          </button>
+        )}
         {course.pan_extract_code && (
           <button className="btn" onClick={copyCode}>
             复制提取码
@@ -62,21 +70,23 @@ export default function CourseDetailPage() {
         )}
       </div>
 
-      <div className="alert" style={{ marginTop: 16, lineHeight: 1.8 }}>
-        <p>
-          分享链接:{' '}
-          <a href={course.pan_share_url} target="_blank" rel="noreferrer">
-            {course.pan_share_url}
-          </a>
-        </p>
-        {course.pan_extract_code && (
+      {course.pan_share_url && (
+        <div className="alert" style={{ marginTop: 16, lineHeight: 1.8 }}>
           <p>
-            提取码: <strong>{course.pan_extract_code}</strong>
+            分享链接:{' '}
+            <a href={course.pan_share_url} target="_blank" rel="noreferrer">
+              {course.pan_share_url}
+            </a>
           </p>
-        )}
-      </div>
+          {course.pan_extract_code && (
+            <p>
+              提取码: <strong>{course.pan_extract_code}</strong>
+            </p>
+          )}
+        </div>
+      )}
 
-      {course.attachments?.length > 0 && (
+      {course.attachments && course.attachments.length > 0 && (
         <div style={{ marginTop: 16 }}>
           <h4>讲义/附件</h4>
           <ul>

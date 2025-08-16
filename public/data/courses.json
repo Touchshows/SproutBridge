@@ -1,244 +1,751 @@
 [
   {
-    "category_id": "math-enlightenment",
-    "category_title": "数学启蒙",
-    "courses": [
+    "super_category_id": "learning-and-courses",
+    "super_category_title": "A. 学习与课程",
+    "categories": [
       {
-        "id": "math-grade-1",
-        "title": "一年级数学",
-        "subject": "数学",
-        "level": "一年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "一年级数学基础课程，包含准备课、位置、数字认识等内容",
-        "outline": ["准备课", "位置", "1~5的认识和加减法", "认识图形"],
-        "total_minutes": 300,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade1-all",
-        "pan_extract_code": "mg1a",
-        "attachments": [],
-        "tags": ["一年级", "基础"],
-        "is_category": true
+        "category_id": "math-enlightenment",
+        "category_title": "数学启蒙",
+        "courses": [
+          {
+            "id": "math-101",
+            "title": "认识数字",
+            "description": "学习1-10的数字，并通过有趣的互动游戏来巩固记忆。",
+            "subject": "数学",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/math-101.png",
+            "outline": ["认识数字1-5", "认识数字6-10", "数字歌"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "math-102",
+            "title": "简单加法",
+            "description": "通过苹果和香蕉的例子，学习5以内的加法。",
+            "subject": "数学",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/math-102.png",
+            "outline": ["5以内的加法", "加法练习", "加法歌"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "math-grade-2",
-        "title": "二年级数学",
-        "subject": "数学",
-        "level": "二年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "二年级数学课程，包含长度单位、加减法、表内乘法等内容",
-        "outline": ["长度单位", "100以内的加法和减法", "表内乘法"],
-        "total_minutes": 410,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade2-all",
-        "pan_extract_code": "mg2a",
-        "attachments": [],
-        "tags": ["二年级", "进阶"],
-        "is_category": true
+        "category_id": "chinese-enlightenment",
+        "category_title": "语文启蒙",
+        "courses": [
+          {
+            "id": "chinese-101",
+            "title": "识字认字",
+            "description": "通过图文并茂的方式，认识常见汉字，激发孩子的学习兴趣。",
+            "subject": "语文",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/chinese-101.png",
+            "outline": ["认识“日、月、水、火”", "认识“山、石、田、土”", "汉字游戏"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "chinese-102",
+            "title": "阅读理解",
+            "description": "阅读简短的寓言故事，并回答问题，锻炼孩子的理解和表达能力。",
+            "subject": "语文",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/chinese-102.png",
+            "outline": ["故事：《小猫钓鱼》", "问题与讨论", "复述故事"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "chinese-103",
+            "title": "国学经典",
+            "description": "诵读《三字经》、《弟子规》等经典选段，感受传统文化的魅力。",
+            "subject": "语文",
+            "level": "幼儿",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/chinese-103.png",
+            "outline": ["《三字经》选段", "《弟子规》选段", "跟读练习"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "math-grade-3",
-        "title": "三年级数学",
-        "subject": "数学",
-        "level": "三年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "三年级数学课程，包含时间、万以内加减法、测量等内容",
-        "outline": ["时、分、秒", "万以内的加法和减法", "测量"],
-        "total_minutes": 350,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade3-all",
-        "pan_extract_code": "mg3a",
-        "attachments": [],
-        "tags": ["三年级", "提高"],
-        "is_category": true
+        "category_id": "english-pronunciation",
+        "category_title": "英语发音",
+        "courses": [
+          {
+            "id": "english-101",
+            "title": "ABC字母歌",
+            "description": "通过欢快的歌曲学习26个英文字母的发音。",
+            "subject": "英语",
+            "level": "幼儿",
+            "total_minutes": 10,
+            "cover_url": "/images/covers/english-101.png",
+            "outline": ["学唱字母歌", "字母跟读", "字母游戏"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "english-102",
+            "title": "自然拼读",
+            "description": "学习元音和辅音的基本发音规则，为自主阅读打下基础。",
+            "subject": "英语",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/english-102.png",
+            "outline": ["元音 a, e, i, o, u", "常见辅音", "拼读练习"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "math-grade-4",
-        "title": "四年级数学",
-        "subject": "数学",
-        "level": "四年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "四年级数学课程，包含大数认识、面积单位、角的度量等内容",
-        "outline": ["大数的认识", "公顷和平方千米", "角的度量"],
-        "total_minutes": 300,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade4-all",
-        "pan_extract_code": "mg4a",
-        "attachments": [],
-        "tags": ["四年级", "深化"],
-        "is_category": true
+        "category_id": "science-enlightenment",
+        "category_title": "科学启蒙",
+        "courses": [
+          {
+            "id": "science-101",
+            "title": "自然科学",
+            "description": "认识身边的植物和动物，了解大自然的奥秘。",
+            "subject": "科学",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/science-101.png",
+            "outline": ["认识花草树木", "认识小动物", "大自然的声音"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "science-102",
+            "title": "科学实验",
+            "description": "动手做一些简单有趣的科学小实验，培养孩子的探索精神。",
+            "subject": "科学",
+            "level": "幼儿",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/science-102.png",
+            "outline": ["实验：浮起来的鸡蛋", "实验：会变色的花", "实验：自制小火山"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "science-103",
+            "title": "环保教育",
+            "description": "学习垃圾分类、节约用水等环保知识，从小养成环保意识。",
+            "subject": "科学",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/science-103.png",
+            "outline": ["垃圾分类", "节约用水用电", "爱护环境"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "math-grade-5",
-        "title": "五年级数学",
-        "subject": "数学",
-        "level": "五年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "五年级数学课程，包含小数乘除法、位置等内容",
-        "outline": ["小数乘法", "位置", "小数除法"],
-        "total_minutes": 350,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade5-all",
-        "pan_extract_code": "mg5a",
-        "attachments": [],
-        "tags": ["五年级", "拓展"],
-        "is_category": true
+        "category_id": "art-enlightenment",
+        "category_title": "艺术启蒙",
+        "courses": [
+          {
+            "id": "art-101",
+            "title": "美术",
+            "description": "学习简笔画、色彩搭配等基础美术知识，发挥孩子的想象力。",
+            "subject": "艺术",
+            "level": "幼儿",
+            "total_minutes": 30,
+            "cover_url": "/images/covers/art-101.png",
+            "outline": ["简笔画：小动物", "认识颜色", "手指画"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "art-102",
+            "title": "音乐",
+            "description": "欣赏经典的儿童歌曲，学习基本的节奏和音高。",
+            "subject": "艺术",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/art-102.png",
+            "outline": ["歌曲：《两只老虎》", "节奏练习", "认识乐器"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "art-103",
+            "title": "舞蹈与律动",
+            "description": "跟着音乐跳舞，做一些简单的身体律动，锻炼孩子的协调性。",
+            "subject": "艺术",
+            "level": "幼儿",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/art-103.png",
+            "outline": ["热身运动", "模仿小动物跳舞", "自由舞蹈"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "math-grade-6",
-        "title": "六年级数学",
-        "subject": "数学",
-        "level": "六年级",
-        "cover_url": "/images/covers/math-cover.png",
-        "description": "六年级数学课程，包含分数运算、比例、圆等内容",
-        "outline": ["分数乘法", "位置与方向", "分数除法", "比", "圆"],
-        "total_minutes": 600,
-        "pan_share_url": "https://pan.baidu.com/s/1math-grade6-all",
-        "pan_extract_code": "mg6a",
-        "attachments": [],
-        "tags": ["六年级", "综合"],
-        "is_category": true
+        "category_id": "digital-literacy",
+        "category_title": "信息素养（数字教育）",
+        "courses": [
+          {
+            "id": "digital-101",
+            "title": "基础计算机",
+            "description": "认识电脑的各个部件，学习鼠标和键盘的基本操作。",
+            "subject": "信息技术",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/digital-101.png",
+            "outline": ["认识电脑", "学习使用鼠标", "学习使用键盘"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "digital-102",
+            "title": "网络安全",
+            "description": "学习如何安全上网，辨别不良信息，保护个人隐私。",
+            "subject": "信息技术",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/digital-102.png",
+            "outline": ["安全上网须知", "保护个人信息", "识别网络陷阱"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "digital-103",
+            "title": "编程启蒙",
+            "description": "通过图形化编程工具，学习编程的基本逻辑，培养解决问题的能力。",
+            "subject": "信息技术",
+            "level": "幼儿",
+            "total_minutes": 30,
+            "cover_url": "/images/covers/digital-103.png",
+            "outline": ["什么是编程", "第一个小程序", "创作自己的故事"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "life-skills-and-mental-health",
+        "category_title": "生活技能与心理健康",
+        "courses": [
+          {
+            "id": "life-101",
+            "title": "安全教育",
+            "description": "学习交通安全、防火防电等基本安全知识，提高自我保护能力。",
+            "subject": "生活技能",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/life-101.png",
+            "outline": ["交通安全", "用火用电安全", "防溺水安全"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "life-102",
+            "title": "健康习惯",
+            "description": "学习正确的洗手方法、刷牙习惯等，养成良好的个人卫生习惯。",
+            "subject": "生活技能",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/life-102.png",
+            "outline": ["七步洗手法", "正确刷牙", "均衡饮食"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "life-103",
+            "title": "情绪管理",
+            "description": "认识自己的情绪，学习如何表达和调节情绪，培养健康的心态。",
+            "subject": "心理健康",
+            "level": "幼儿",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/life-103.png",
+            "outline": ["认识情绪", "情绪的表达", "情绪的管理"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "fun-expansion",
+        "category_title": "趣味拓展",
+        "courses": [
+          {
+            "id": "fun-101",
+            "title": "动画讲故事",
+            "description": "观看有趣的动画片，听故事，开拓视野，激发想象力。",
+            "subject": "趣味拓展",
+            "level": "幼儿",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/fun-101.png",
+            "outline": ["动画片欣赏", "故事分享", "角色扮演"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "fun-102",
+            "title": "趣味问答",
+            "description": "参与有趣的知识问答，挑战自己的知识储备，在快乐中学习。",
+            "subject": "趣味拓展",
+            "level": "幼儿",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/fun-102.png",
+            "outline": ["动物世界问答", "植物王国问答", "生活常识问答"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          },
+          {
+            "id": "fun-103",
+            "title": "小小演说家",
+            "description": "选择一个喜欢的主题，进行简短的演讲，锻炼孩子的胆量和口才。",
+            "subject": "趣味拓展",
+            "level": "幼儿",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/fun-103.png",
+            "outline": ["选择主题", "准备讲稿", "上台演讲"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       }
     ]
   },
   {
-    "category_id": "english-pronunciation",
-    "category_title": "英语发音",
-    "courses": [
+    "super_category_id": "language-training",
+    "super_category_title": "B. 语言训练",
+    "categories": [
       {
-        "id": "english-phonics-basic",
-        "title": "自然拼读基础",
-        "subject": "英语",
-        "level": "启蒙",
-        "cover_url": "/images/covers/english-cover.png",
-        "description": "学习26个字母的发音和基础拼读规则",
-        "outline": ["字母发音", "单音节词", "拼读规则", "发音练习"],
-        "total_minutes": 180,
-        "pan_share_url": "https://pan.baidu.com/s/1english-phonics-basic",
-        "pan_extract_code": "epb1",
-        "attachments": [],
-        "tags": ["英语", "发音", "基础"],
-        "is_category": true
+        "category_id": "auditory-training",
+        "category_title": "听觉训练",
+        "courses": [
+          {
+            "id": "lang-201",
+            "title": "声音的识别",
+            "description": "学习识别各种环境音和动物叫声。",
+            "subject": "语言训练",
+            "level": "初级",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/lang-201.png",
+            "outline": ["自然界的声音", "城市里的声音", "动物的声音"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "english-phonics-advanced",
-        "title": "自然拼读进阶",
-        "subject": "英语",
-        "level": "进阶",
-        "cover_url": "/images/covers/english-cover.png",
-        "description": "学习复杂拼读规则和多音节词汇",
-        "outline": ["复合音", "多音节词", "重音规则", "语调练习"],
-        "total_minutes": 240,
-        "pan_share_url": "https://pan.baidu.com/s/1english-phonics-advanced",
-        "pan_extract_code": "epa1",
-        "attachments": [],
-        "tags": ["英语", "发音", "进阶"],
-        "is_category": true
+        "category_id": "pronunciation-training",
+        "category_title": "发音训练",
+        "courses": [
+          {
+            "id": "lang-202",
+            "title": "元音和辅音",
+            "description": "学习并练习普通话中的基本元音和辅音。",
+            "subject": "语言训练",
+            "level": "初级",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/lang-202.png",
+            "outline": ["单元音练习", "复元音练习", "声母练习"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "english-ipa",
-        "title": "国际音标",
-        "subject": "英语",
-        "level": "专业",
-        "cover_url": "/images/covers/english-cover.png",
-        "description": "系统学习48个国际音标的发音",
-        "outline": ["元音音标", "辅音音标", "音标组合", "标准发音"],
-        "total_minutes": 300,
-        "pan_share_url": "https://pan.baidu.com/s/1english-ipa",
-        "pan_extract_code": "eip1",
-        "attachments": [],
-        "tags": ["英语", "音标", "专业"],
-        "is_category": true
+        "category_id": "oral-motor-training",
+        "category_title": "口肌训练",
+        "courses": [
+          {
+            "id": "lang-203",
+            "title": "舌头和嘴唇的运动",
+            "description": "通过有趣的游戏锻炼舌头和嘴唇的灵活性。",
+            "subject": "语言训练",
+            "level": "初级",
+            "total_minutes": 10,
+            "cover_url": "/images/covers/lang-203.png",
+            "outline": ["吹泡泡", "舔棒棒糖", "学动物叫"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "english-conversation",
-        "title": "口语对话",
-        "subject": "英语",
-        "level": "实用",
-        "cover_url": "/images/covers/english-cover.png",
-        "description": "日常英语口语对话练习",
-        "outline": ["日常问候", "购物对话", "旅游英语", "商务对话"],
-        "total_minutes": 360,
-        "pan_share_url": "https://pan.baidu.com/s/1english-conversation",
-        "pan_extract_code": "eco1",
-        "attachments": [],
-        "tags": ["英语", "口语", "实用"],
-        "is_category": true
+        "category_id": "expression-training",
+        "category_title": "表达训练",
+        "courses": [
+          {
+            "id": "lang-204",
+            "title": "看图说话",
+            "description": "根据图片内容，用简单的语言描述出来。",
+            "subject": "语言训练",
+            "level": "初级",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/lang-204.png",
+            "outline": ["描述单张图片", "讲述图片故事", "创编故事结尾"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       }
     ]
   },
   {
-    "category_id": "chinese-pronunciation",
-    "category_title": "汉语发音",
-    "courses": [
+    "super_category_id": "interest-and-literacy",
+    "super_category_title": "C. 兴趣与素养",
+    "categories": [
       {
-        "id": "pinyin-basic",
-        "title": "拼音基础",
-        "subject": "语文",
-        "level": "启蒙",
-        "cover_url": "/images/covers/chinese-cover.png",
-        "description": "学习汉语拼音的声母、韵母和声调",
-        "outline": ["声母学习", "韵母学习", "声调练习", "拼读训练"],
-        "total_minutes": 200,
-        "pan_share_url": "https://pan.baidu.com/s/1pinyin-basic",
-        "pan_extract_code": "pyb1",
-        "attachments": [],
-        "tags": ["语文", "拼音", "基础"],
-        "is_category": true
+        "category_id": "life-encyclopedia",
+        "category_title": "生活百科",
+        "courses": [
+          {
+            "id": "interest-301",
+            "title": "认识交通工具",
+            "description": "认识各种常见的交通工具及其用途。",
+            "subject": "兴趣与素养",
+            "level": "初级",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/interest-301.png",
+            "outline": ["陆地上的车", "天上的飞机", "水里的船"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "pinyin-advanced",
-        "title": "拼音进阶",
-        "subject": "语文",
-        "level": "进阶",
-        "cover_url": "/images/covers/chinese-cover.png",
-        "description": "复杂拼音组合和特殊读音规则",
-        "outline": ["复韵母", "鼻韵母", "整体认读音节", "变调规则"],
-        "total_minutes": 180,
-        "pan_share_url": "https://pan.baidu.com/s/1pinyin-advanced",
-        "pan_extract_code": "pya1",
-        "attachments": [],
-        "tags": ["语文", "拼音", "进阶"],
-        "is_category": true
+        "category_id": "natural-science",
+        "category_title": "自然科学",
+        "courses": [
+          {
+            "id": "interest-302",
+            "title": "恐龙世界",
+            "description": "了解不同种类的恐龙和它们生活的时代。",
+            "subject": "兴趣与素养",
+            "level": "初级",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/interest-302.png",
+            "outline": ["霸王龙", "三角龙", "恐龙化石"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "mandarin-pronunciation",
-        "title": "普通话发音",
-        "subject": "语文",
-        "level": "标准",
-        "cover_url": "/images/covers/chinese-cover.png",
-        "description": "标准普通话发音训练和纠音",
-        "outline": ["发音标准", "语音纠正", "朗读技巧", "语调练习"],
-        "total_minutes": 240,
-        "pan_share_url": "https://pan.baidu.com/s/1mandarin-pronunciation",
-        "pan_extract_code": "mp01",
-        "attachments": [],
-        "tags": ["语文", "普通话", "标准"],
-        "is_category": true
+        "category_id": "humanities-and-history",
+        "category_title": "人文历史",
+        "courses": [
+          {
+            "id": "interest-303",
+            "title": "中国古代神话",
+            "description": "听盘古开天、女娲补天等神话故事。",
+            "subject": "兴趣与素养",
+            "level": "初级",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/interest-303.png",
+            "outline": ["盘古开天", "女娲补天", "后羿射日"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "ancient-poetry-recitation",
-        "title": "古诗词朗诵",
-        "subject": "语文",
-        "level": "文化",
-        "cover_url": "/images/covers/chinese-cover.png",
-        "description": "古诗词的正确发音和朗诵技巧",
-        "outline": ["古音知识", "诗词韵律", "朗诵技巧", "情感表达"],
-        "total_minutes": 300,
-        "pan_share_url": "https://pan.baidu.com/s/1ancient-poetry",
-        "pan_extract_code": "apr1",
-        "attachments": [],
-        "tags": ["语文", "古诗词", "文化"],
-        "is_category": true
+        "category_id": "hobbies",
+        "category_title": "兴趣爱好",
+        "courses": [
+          {
+            "id": "interest-304",
+            "title": "乐高拼搭",
+            "description": "用乐高积木搭建简单的模型，发挥创造力。",
+            "subject": "兴趣与素养",
+            "level": "初级",
+            "total_minutes": 30,
+            "cover_url": "/images/covers/interest-304.png",
+            "outline": ["搭建小房子", "搭建小汽车", "自由创作"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "super_category_id": "emotion-and-psychology",
+    "super_category_title": "D. 情感与心理",
+    "categories": [
+      {
+        "category_id": "emotion-recognition",
+        "category_title": "情绪认知",
+        "courses": [
+          {
+            "id": "emotion-401",
+            "title": "表情猜猜猜",
+            "description": "通过观察图片和动画，学习识别不同的面部表情。",
+            "subject": "情感与心理",
+            "level": "初级",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/emotion-401.png",
+            "outline": ["认识开心和难过", "认识生气和害怕", "表情模仿游戏"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
       },
       {
-        "id": "speech-training",
-        "title": "演讲训练",
-        "subject": "语文",
-        "level": "高级",
-        "cover_url": "/images/covers/chinese-cover.png",
-        "description": "提升口语表达能力和演讲技巧",
-        "outline": ["发声技巧", "语速控制", "情感表达", "演讲技巧"],
-        "total_minutes": 280,
-        "pan_share_url": "https://pan.baidu.com/s/1speech-training",
-        "pan_extract_code": "st01",
-        "attachments": [],
-        "tags": ["语文", "演讲", "高级"],
-        "is_category": true
+        "category_id": "emotion-management",
+        "category_title": "情绪管理",
+        "courses": [
+          {
+            "id": "emotion-402",
+            "title": "我的情绪小怪兽",
+            "description": "学习用语言和绘画的方式来表达自己的情绪。",
+            "subject": "情感与心理",
+            "level": "初级",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/emotion-402.png",
+            "outline": ["画出你的情绪", "情绪温度计", "冷静小技巧"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "psychological-construction",
+        "category_title": "心理建设",
+        "courses": [
+          {
+            "id": "emotion-403",
+            "title": "我能行！",
+            "description": "通过故事和游戏，建立自信心和积极的心态。",
+            "subject": "情感与心理",
+            "level": "初级",
+            "total_minutes": 25,
+            "cover_url": "/images/covers/emotion-403.png",
+            "outline": ["发现我的优点", "挑战小任务", "给自己鼓掌"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "social-interaction",
+        "category_title": "社交互动",
+        "courses": [
+          {
+            "id": "emotion-404",
+            "title": "分享与合作",
+            "description": "学习如何与他人分享玩具和合作完成任务。",
+            "subject": "情感与心理",
+            "level": "初级",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/emotion-404.png",
+            "outline": ["轮流玩游戏", "一起搭积木", "学会说“谢谢”和“请”"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "super_category_id": "safety-and-life",
+    "super_category_title": "E. 安全与生活",
+    "categories": [
+      {
+        "category_id": "safety-knowledge",
+        "category_title": "安全常识",
+        "courses": [
+          {
+            "id": "safety-501",
+            "title": "不跟陌生人走",
+            "description": "通过情景模拟，学习如何应对陌生人的搭讪。",
+            "subject": "安全与生活",
+            "level": "初级",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/safety-501.png",
+            "outline": ["情景模拟：陌生人给糖果", "记住家人电话", "大声呼救"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "self-care",
+        "category_title": "生活自理",
+        "courses": [
+          {
+            "id": "safety-502",
+            "title": "自己穿衣服",
+            "description": "学习自己穿脱衣服和鞋子。",
+            "subject": "安全与生活",
+            "level": "初级",
+            "total_minutes": 20,
+            "cover_url": "/images/covers/safety-502.png",
+            "outline": ["学习扣扣子", "学习拉拉链", "学习系鞋带"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "housework",
+        "category_title": "家务劳动",
+        "courses": [
+          {
+            "id": "safety-503",
+            "title": "整理玩具",
+            "description": "学习在游戏结束后自己收拾和整理玩具。",
+            "subject": "安全与生活",
+            "level": "初级",
+            "total_minutes": 15,
+            "cover_url": "/images/covers/safety-503.png",
+            "outline": ["玩具分类", "玩具回家", "保持整洁"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "social-practice",
+        "category_title": "社会实践",
+        "courses": [
+          {
+            "id": "safety-504",
+            "title": "超市购物",
+            "description": "模拟在超市购物的场景，学习认识商品和付钱。",
+            "subject": "安全与生活",
+            "level": "初级",
+            "total_minutes": 30,
+            "cover_url": "/images/covers/safety-504.png",
+            "outline": ["制定购物清单", "寻找商品", "排队结账"],
+            "pan_share_url": "https://pan.baidu.com/s/xxxx",
+            "pan_extract_code": "1234",
+            "attachments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "super_category_id": "data-and-motivation",
+    "super_category_title": "F. 数据与激励",
+    "categories": [
+      {
+        "category_id": "ability-assessment",
+        "category_title": "能力评估",
+        "courses": [
+          {
+            "id": "data-601",
+            "title": "我的能力雷达图",
+            "description": "（此功能待开发）通过完成各项任务，生成个人能力雷达图。",
+            "subject": "数据与激励",
+            "level": "N/A",
+            "total_minutes": 0,
+            "cover_url": "/images/covers/data-601.png",
+            "outline": [],
+            "pan_share_url": "",
+            "pan_extract_code": "",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "growth-report",
+        "category_title": "成长报告",
+        "courses": [
+          {
+            "id": "data-602",
+            "title": "我的成长足迹",
+            "description": "（此功能待开发）记录学习过程和成果，生成阶段性成长报告。",
+            "subject": "数据与激励",
+            "level": "N/A",
+            "total_minutes": 0,
+            "cover_url": "/images/covers/data-602.png",
+            "outline": [],
+            "pan_share_url": "",
+            "pan_extract_code": "",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "points-mall",
+        "category_title": "积分商城",
+        "courses": [
+          {
+            "id": "data-603",
+            "title": "兑换我的奖励",
+            "description": "（此功能待开发）通过学习获得积分，兑换虚拟奖励或实体礼物。",
+            "subject": "数据与激励",
+            "level": "N/A",
+            "total_minutes": 0,
+            "cover_url": "/images/covers/data-603.png",
+            "outline": [],
+            "pan_share_url": "",
+            "pan_extract_code": "",
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "category_id": "virtual-partner",
+        "category_title": "虚拟伙伴",
+        "courses": [
+          {
+            "id": "data-604",
+            "title": "我的AI小伙伴",
+            "description": "（此功能待开发）与虚拟伙伴互动，共同学习和成长。",
+            "subject": "数据与激励",
+            "level": "N/A",
+            "total_minutes": 0,
+            "cover_url": "/images/covers/data-604.png",
+            "outline": [],
+            "pan_share_url": "",
+            "pan_extract_code": "",
+            "attachments": []
+          }
+        ]
       }
     ]
   }
