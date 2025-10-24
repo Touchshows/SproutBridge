@@ -1,0 +1,78 @@
+name: Deploy to Tencent COS
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-cos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (Next.js static export)
+        run: npm run build
+
+      - name: Verify output directory
+        run: |
+          if [ -d "out" ]; then
+            echo "out directory exists" && ls -la out | head -n 50
+          else
+            echo "out directory missing; please ensure next.config.mjs has output: 'export'"
+            exit 1
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install coscmd
+        run: pip install --upgrade coscmd
+
+      - name: Configure coscmd
+        env:
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+          COS_BUCKET: ${{ secrets.COS_BUCKET }}
+          COS_REGION: ${{ secrets.COS_REGION }}
+        run: |
+          coscmd config -a "$TENCENT_SECRET_ID" -s "$TENCENT_SECRET_KEY" -b "$COS_BUCKET" -r "$COS_REGION" -m 1
+
+      - name: Upload to COS (sync out/ to prefix)
+        env:
+          COS_PREFIX: ${{ secrets.COS_PREFIX }}
+        run: |
+          REMOTE_PATH="/"
+          if [ -n "$COS_PREFIX" ]; then
+            PREFIX=$(echo "$COS_PREFIX" | sed 's#^/*##;s#/*$##')
+            REMOTE_PATH="/${PREFIX}/"
+          fi
+          echo "Uploading to COS path: ${REMOTE_PATH}"
+          coscmd upload -r -f out/ "${REMOTE_PATH}"
+
+      # Optional: Purge CDN cache if you use Tencent CDN (requires secrets)
+      # - name: Purge CDN cache
+      #   env:
+      #     TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+      #     TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+      #     CDN_DOMAIN: ${{ secrets.CDN_DOMAIN }}
+      #   run: |
+      #     npm i -g tencentcloud-sdk-nodejs
+      #     node -e "const tc=require('tencentcloud-sdk-nodejs'); const cdn=tc.cdn.v20180606; const client=new cdn.Client({ credential:{ secretId:process.env.TENCENT_SECRET_ID, secretKey:process.env.TENCENT_SECRET_KEY }, region:'ap-guangzhou' }); client.PurgePathCache({ Paths:['https://'+process.env.CDN_DOMAIN+'/'], FlushType:'flush' }).then(console.log).catch((e)=>{console.error(e);process.exit(1);});"

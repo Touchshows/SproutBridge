@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "乡村振兴 · 美丽中国",
+    "src": "/images/banners/rural-revitalization.svg",
+    "link": "/learn"
+  },
+  {
+    "id": 2,
+    "title": "国家富强 · 科技自立自强",
+    "src": "/images/banners/national-prosperity.svg",
+    "link": "/learn"
+  },
+  {
+    "id": 3,
+    "title": "党的建设 · 不忘初心",
+    "src": "/images/banners/party-building.svg",
+    "link": "/community"
+  },
+  {
+    "id": 4,
+    "title": "党史学习 · 红色教育",
+    "src": "/images/banners/red-education.svg",
+    "link": "/help"
+  },
+  {
+    "id": 5,
+    "title": "社会主义核心价值观",
+    "src": "/images/banners/core-values.svg",
+    "link": "/community"
+  }
+]

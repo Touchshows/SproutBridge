@@ -8,8 +8,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="container">
           <header className="header">
-            <h1><Link href="/">SproutBridge · 课程库</Link></h1>
+            <h1><Link href="/home">SproutBridge · 课程库</Link></h1>
             <nav style={{ display: 'flex', gap: '15px' }}>
+              <Link className="btn" href="/home">首页</Link>
+              <Link className="btn" href="/learn">课程学习</Link>
+              <Link className="btn" href="/community">互动</Link>
               <Link className="btn" href="/changelog">更新日志</Link>
               <Link className="btn" href="/help">观看帮助</Link>
             </nav>

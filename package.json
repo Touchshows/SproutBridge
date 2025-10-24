@@ -6,14 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "soft:pages": "node scripts/generate_source_pages.js",
+    "deploy:cos": "node scripts/deploy_cos.js"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "next": "14.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "recharts": "^3.1.2"
+    "recharts": "^3.1.2",
+    "cos-nodejs-sdk-v5": "^2.12.5",
+    "mime-types": "^2.1.35"
   },
   "devDependencies": {
     "@types/node": "20.5.9",
